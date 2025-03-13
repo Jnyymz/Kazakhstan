@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Discover Kazakhstan</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+<body class="bg-[#F5F5F5] text-[#4B164C]">
+    <!-- Navbar -->
+    <nav class="bg-[#00AFCA] text-[#F5F5F5] p-4">
+        <div class="container mx-auto flex justify-between items-center">
+            <h1 class="text-2xl font-bold text-white hover:text-[#FEC50C]">
+                <a href="index.html">Kazakhstan</a>
+            </h1>
+            <button id="menu-toggle" class="md:hidden text-white text-2xl">
+                <i class="fas fa-bars"></i>
+            </button>
+            <ul id="menu" class="hidden md:flex gap-6">
+                <li><a href="geography.html" class="hover:text-[#FEC50C]">Geography</a></li>
+                <li><a href="culture.html" class="hover:text-[#FEC50C]">Culture</a></li>
+                <li><a href="delicacies.html" class="hover:text-[#FEC50C]">Delicacies</a></li>
+                <li><a href="attraction.html" class="hover:text-[#FEC50C]">Attractions</a></li>
+            </ul>
+        </div>
+    </nav>
+    <script>
+        document.getElementById("menu-toggle").addEventListener("click", function() {
+            document.getElementById("menu").classList.toggle("hidden");
+        });
+    </script>
+
+    <!-- Hero Section -->
+    <section class="text-center py-20">
+        <h2 class="text-4xl font-bold mb-4 text-[#FEC50C]">DELICACIES</h2>
+        <p class="text-lg max-w-2xl mx-auto">Experience the rich flavors and unique dishes that showcase Kazakhstan's culinary heritage.</p>
+    </section>
+    
+    <!-- Delicacies Grid -->
+    <section class="container mx-auto p-8">
+        <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
+            <div class="text-center">
+                <div class="rounded-full border-8 border-[#00AFCA] p-1 inline-block">
+                    <div class="rounded-full border-4 border-[#FEC50C] overflow-hidden w-40 h-40">
+                        <img src="img/beshbarmak.jpeg" alt="Beshbarmak" class="object-cover w-full h-full">
+                    </div>
+                </div>
+                <h3 class="text-xl font-semibold mt-4 text-gray-800">Beshbarmak</h3>
+                <p class="text-gray-600">Kazakhstan's national dish made of boiled meat and pasta sheets.</p>
+            </div>
+            <div class="text-center">
+                <div class="rounded-full border-8 border-[#00AFCA] p-1 inline-block">
+                    <div class="rounded-full border-4 border-[#FEC50C] overflow-hidden w-40 h-40">
+                        <img src="img/shashlik.jpg" alt="Shashlik" class="object-cover w-full h-full">
+                    </div>
+                </div>
+                <h3 class="text-xl font-semibold mt-4 text-gray-800">Shashlik</h3>
+                <p class="text-gray-600">Grilled skewered meat often served with onions and vinegar sauce.</p>
+            </div>
+            <div class="text-center">
+                <div class="rounded-full border-8 border-[#00AFCA] p-1 inline-block">
+                    <div class="rounded-full border-4 border-[#FEC50C] overflow-hidden w-40 h-40">
+                        <img src="img/kurt.jpg" alt="Kurt" class="object-cover w-full h-full">
+                    </div>
+                </div>
+                <h3 class="text-xl font-semibold mt-4 text-gray-800">Kurt</h3>
+                <p class="text-gray-600">Dried, salty cheese balls with a rich, tangy flavor.</p>
+            </div>
+        </div>
+    </section>
+    
+    <!-- Footer -->
+    <footer class="bg-[#00AFCA] text-white py-6 text-center">
+        <p>&copy; 2025 DISCOVER KAZAKHSTAN</p>
+    </footer>
+</body>
+</html>
